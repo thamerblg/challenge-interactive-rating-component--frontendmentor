@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- Rating state start -->
+      <div class="card rating">
+        <img src="./images/icon-star.svg" alt="icon star" />
+        <h1>How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <form>
+          <div class="options">
+            <input
+              type="radio"
+              id="num1"
+              class="ratingCheckbox"
+              name="numero"
+              value="1"
+            />
+            <label for="num1" class="option">1</label>
+            <input
+              type="radio"
+              id="num2"
+              class="ratingCheckbox"
+              name="numero"
+              value="2"
+            />
+            <label for="num2" class="option">2</label>
+            <input
+              type="radio"
+              id="num3"
+              class="ratingCheckbox"
+              name="numero"
+              value="3"
+            />
+            <label for="num3" class="option">3</label>
+            <input
+              type="radio"
+              id="num4"
+              class="ratingCheckbox"
+              name="numero"
+              value="4"
+            />
+            <label for="num4" class="option">4</label>
+            <input
+              type="radio"
+              id="num5"
+              class="ratingCheckbox"
+              name="numero"
+              value="5"
+            />
+            <label for="num5" class="option">5</label>
+          </div>
+          <button type="submit" value="Submit" class="submit_btn">
+            Submit
+          </button>
+        </form>
+      </div>
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+      <div class="card thank_you">
+        <img
+          src="./images/illustration-thank-you.svg"
+          alt="illustration thank you"
+        />
+        <p class="result">You selected <span class="value"></span> out of 5</p>
+        <h2>Thank you !</h2>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+      <!-- Thank you state end -->
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
